@@ -1,0 +1,65 @@
+input:hover {
+	background: #e3e3e3;
+}
+form:hover {
+	background: #e3e3e3;
+}
+input:focus {
+	background: #e3e3e3;
+	outline: none;
+}
+input {
+	border:none;
+	background: none;
+	border-radius: 3px;
+}
+send::before {
+	content: "Send message";
+}
+file {
+	width: 70%;
+}
+file img {
+	border-radius: 12%;
+	max-width: 70%;
+	max-height: 200px;
+}
+file:before {
+	content:"\A";
+	white-space: pre-wrap;
+}
+file:after {
+	content:"\A";
+	white-space: pre-wrap;
+}
+call:before {
+	content: "\00a0";
+	background-color: grey;
+	margin-right: 5px;
+}
+call:after {
+	content: attr(arg);
+}
+.msg {
+	background-color: lightblue;
+	width: 80%;
+	border-radius: 3px;
+	padding: 12px;
+}
+.user:after {
+	content:"\A";
+	white-space: pre-wrap;
+}
+.user {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: darkgrey;
+}
+emo:before {
+	text-shadow: 2px -1px;
+	color: lightgrey;
+	font-weight: bold;
+	content: attr(arg);
+}
